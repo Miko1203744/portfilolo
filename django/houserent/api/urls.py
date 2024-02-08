@@ -1,0 +1,31 @@
+from django.urls import path
+from .views import registerForm, LoginView, LogoutView, ProfileView, UpdateProfileView, HouseViewSet, HouseTypeViewSet, HouseTypeAPIView, create_house, upload_photos, HouseListByUserAPIView, PhotoListByHouseIdAPIView, HouseDetailView, userrelatehouse, HouseSearchAPIView, ViewScheduleViewSet, AgentViewSet, RandomAgentAPIView, CreateViewScheduleViewSet, NotficationView, AgentInfoViewSet, UpdateAgentView
+
+urlpatterns = [
+    path('houses', HouseViewSet.as_view()),
+    path('ViewSchedule', ViewScheduleViewSet.as_view()),
+    path('CreateViewSchedule', CreateViewScheduleViewSet.as_view()),
+    path('Agent', AgentViewSet.as_view()),
+    path('AgentInfo', AgentInfoViewSet.as_view()),
+    path('update_Agent', UpdateAgentView.as_view()),
+    path('Notfication', NotficationView.as_view()),
+    path('random_agent', RandomAgentAPIView.as_view(), name='random_agent'),
+    path('register_form', registerForm.as_view()),
+    path('login_form', LoginView.as_view()),
+    path('logouts', LogoutView.as_view()),
+    path('profile', ProfileView.as_view(), name='profile-api'),
+    path('update-profile', UpdateProfileView.as_view(), name='update-profile'),
+    path('HouseType', HouseTypeViewSet.as_view(), name='HouseType'),
+    path('houseType/<str:type>/', HouseTypeAPIView.as_view(), name='house_type_api'),
+    path('create_house', create_house, name='create_house'),
+    path('upload_photos', upload_photos, name='upload_photos'),
+    path('UserHouses', HouseListByUserAPIView.as_view(),
+         name='house-list-by-user'),
+    path('photos/<int:house_id>/', PhotoListByHouseIdAPIView.as_view(),
+         name='photo-list-by-house-id'),
+    path('housedetail/<int:house_id>/',
+         HouseDetailView.as_view(), name='house_detail'),
+    path('userrelatehouse/<str:house_location>/',
+         userrelatehouse.as_view()),
+    path('houses/search/', HouseSearchAPIView.as_view(), name='house-search'),
+]

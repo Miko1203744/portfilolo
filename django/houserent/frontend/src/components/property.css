@@ -1,0 +1,81 @@
+.property_list{
+    display:flex;
+    gap:20px;
+    float: right;
+    padding:20px 80px 0px 0px;
+}
+
+.property_list a{
+text-decoration: none;
+}
+
+.type-grids{
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px ;
+    row-gap: 20px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+.p_list{
+  height: 100vh;
+  width: 100%;
+}
+
+.p_list img{
+  height: 400px;
+  width: 100%;
+}
+
+.p_list h1{
+  
+  position: absolute;
+  bottom:300px;
+  left:550px;
+  color:white;
+
+}
+
+.p_list1{
+  margin-left: 300px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  row-gap: 100px;
+  column-gap: 100px;
+  
+}
+.p_list_b{
+  border: 1px solid black;
+}
+.p_list1 img{
+  height: 200px;
+  width: 100%;
+}
+
+.agent{
+  margin-left: 200px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  column-gap: 100px;
+}
+.agent img{
+  width: 100%;
+  height: 300px;
+}
+
+.contact-cont{
+  background-color: yellow;
+  width: 100%;
+  height: 100vh;
+}

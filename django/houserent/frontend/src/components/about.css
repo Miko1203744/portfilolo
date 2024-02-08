@@ -1,0 +1,36 @@
+.container-2{
+display:flex;
+background-color:  #eaeded;
+padding: 50px 0px;
+margin-top: 50px;
+height: 300px;
+width: 100%;
+gap:100px;
+}
+.row1-1{
+flex:0.5;
+white-space: normal;
+overflow: hidden;
+overflow-wrap: break-word; /* Add this line */
+
+}
+.row1-1 img{
+margin-left: 100px;
+}
+.row1-2{
+flex:0.5;
+white-space: normal;
+  overflow: hidden;
+  overflow-wrap:break-word /* Add this line */
+
+
+}
+.container-3{
+    display:flex;
+background-color: white;
+padding: 50px 0px;
+margin-top: 50px;
+height: 300px;
+width: 100%;
+gap:100px;
+}

@@ -1,0 +1,22 @@
+.house_detail_cont{
+ margin-top: 100px;
+ display: flex;
+ justify-content: flex-end;
+}
+
+.house_detail_lis1{
+flex:0.25;
+
+}
+.house_detail_lis2{
+flex:0.5;
+
+}
+
+.house_detail_lis3{
+flex:0.25
+}
+.M{
+    width: 500px;
+   margin-right: 200px;
+}

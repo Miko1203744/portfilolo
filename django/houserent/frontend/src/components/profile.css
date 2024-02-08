@@ -1,0 +1,27 @@
+.prof_page_c{
+    background-color: yellow;
+    height: 300px;
+    width: 100%;
+}
+.prof_img{
+    border: 1px solid black;
+    position: relative;
+    bottom: 80px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin:0 50% ;
+}
+.prof_info{
+    margin:0 50% ;
+    display: flex;
+    gap:50px;
+}
+.house_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto; /* Let the rows adjust automatically */
+    row-gap: 50px;
+    column-gap: 50px;
+    margin-top: 100px;
+}

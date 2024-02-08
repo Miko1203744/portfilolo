@@ -1,0 +1,33 @@
+.signup-cont{
+background-color: rgb(0, 255, 255);
+height: 100vh;
+width: 100%;
+}
+
+.signup-cont .cont1{
+    padding: 40px;
+    height: 560px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.cont-inside{
+    display: flex;
+    background-color: brown;
+    height: 100%;
+width: 100%;
+}
+
+.cont-inside .section1{
+  flex:0.4;
+}
+
+.cont-inside .section2{
+flex: 0.4;
+padding:20px 0px 50px 0px;
+  overflow: hidden;
+  overflow-wrap:break-word 
+}
+
+.cont-inside .section3{
+    flex: 0.2;
+    }

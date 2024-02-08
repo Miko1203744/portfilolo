@@ -1,0 +1,16 @@
+.profile_img_c{
+    margin-top: 20px 0px 30px 0px;
+}
+
+
+.logo{
+    display: flex;
+    flex: 0.25;
+    gap:25px;
+    justify-content: center;
+    margin-right: 300px;
+    }
+
+.logo_list{
+    margin-top: 15px;
+}    
